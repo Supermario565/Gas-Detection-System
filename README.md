@@ -1,3 +1,5 @@
+# Description
+
 Our gas detection system aims to provide an uncomplicated yet robust solution for gas detection, designed to focus on simplicity and accessibility. The system functions as follows: when gas is detected by the gas sensor, a red LED lights up, and a green LED means no gas is detected. Our main goals consist of affordability, versatility, and widespread adaptation.
 
 # Hardware Requirements
