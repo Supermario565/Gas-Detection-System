@@ -12,7 +12,8 @@ Our gas detection system aims to provide an uncomplicated yet robust solution fo
 
 # Software Requirements
 
-
+* Arduino Software
+* 
 
 # Setup and Configuration
 
