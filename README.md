@@ -12,19 +12,20 @@ Our gas detection system aims to provide an uncomplicated yet robust solution fo
 
 # Software Requirements
 
-* Arduino Software
-* 
+* Arduino IDE
+  
 
 # Setup and Configuration
-
+ Installed arduino IDE, selected our board, and connected the board to computer via USB port.
 
 
 # Code Explanation
+	In our code's global variable declaration section, we configured the variables as constant integers to their respective GPIO pins; in the void setup() portion of the code, variables were configured as inputs and outputs. Next, in the void loop(), we declared the int variable gasDetected, and set it equal to the digital output from the MQ2 sensor. We needed a condition for an if statement. Since the MQ2 outputs a LOW signal when it senses gas, we had the condition be when gasDetected is == LOW. When the condition is true the code functions to turn off the green LED, turn on the red LED, and activate the for loop containing the code to make the buzzer beep when gas is detected. The code within the for loop functions uses the tone(buzzer,1000) function to send a digital square wave with a frequency of 1 kHz to the buzzer, which produces a sound for .15 seconds due to the delay() function, and then the noTone function which turns off the buzzer for .15 seconds because of the delay() function. The for loop runs five times every time gas is detected. If gas is not detected, the red LED turns off, the green LED turns on, and the buzzer silences. The void loop() function repeats every .25 seconds.
 
 
 
 # Usage
-
+  	The system performs as expected, turning off the green LED, illuminating the red one, and beeping the buzzer when gas is detected. When gas is not detected, the red LED turns off, the green one illuminates and the buzzer is silent.
 
 
 # Schematic
